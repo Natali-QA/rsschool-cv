@@ -24,25 +24,23 @@ We will consider "a", "e", "i", "o", "u" as vowels for this Kata (but not "y"). 
 ```
 function getCount(str) {
   let vowelsCount = 0;
-  const vowels = ["a", "e", "i", "o", "u"]
-  
+  const vowels = ["a", "e", "i", "o", "u"]  
   for (let i=0; i<str.length; i++){
      if(vowels.indexOf(str[i]) !== -1){
       vowelsCount++;
     }   
-  }
-     
+  }    
   return vowelsCount;
 }
 ```
-##**Experience:**
+## **Experience:**
 * **March 2014 – present** - AQA engineer at Waverley Software
 * **October 2012 – February 2014** - QA engineer at Opinion Corp
 * **April 2012 – September 2012** - QA engineer at Winforse Ukraine
-##**Education:**
+## **Education:**
 * 09.2007 – 06.2012 - National Aerospace University ‘KhAI’ ( Ukraine), Software Engineering  
 **Degree:** Specialist
-##**Languages:**
+## **Languages:**
 * **English (written/verbal)** – Upper-Intermediate;
 * **Russian** – Native.
 
