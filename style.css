@@ -1,13 +1,161 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  background-color: #f0f0f0;
-  color: #333;
+* {
+  box-sizing: border-box;
 }
 
-h1 {
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #2b2c2c;
+  color: #FFF;
+  height: 100%;
+  margin: 0;
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.3;
+  margin: 0;
+}
+
+pre {
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#main > * {
+  width: 100%;
+}
+
+.content-row {
+  display: flex;
+  width: 100%;
+}
+
+.left-block {
+  width: 300px;
+}
+
+.right-block {
+  width: calc(100% - 300px);
+}
+
+.header .right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.colored-block {
+  background-color: #2d2e2e;
+}
+
+.profile-photo {
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+
+.header-menu, .user-info {
+  background-color: #e0a80d;
+}
+
+.header-menu-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 15px;
+  justify-content: flex-end;
+}
+
+.header-menu-link {
+  color: #202026;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.header-menu-item:first-child .header-menu-link {
+  padding-left: 20px;
+}
+
+.header-menu-item:last-child .header-menu-link {
+  padding-right: 20px;
+}
+
+.user-info {
+  text-align: right;
+  padding: 15px;
+  margin-top: 20px;
+  color: #202026;
+  text-transform: uppercase;
+}
+
+.user-info h1 {
   font-size: 24px;
   font-family: Georgia, Times, serif;
   font-weight: normal;
+  margin: 0;
 }
 
+.main-content .right-block {
+  padding: 20px;
+}
+
+.row-title {
+  color: #fff;
+  font-size: 20px;
+  text-align: right;
+  padding: 20px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.main-list {
+  list-style-type: circle;
+  margin: 0;
+  padding-left: 17px;
+}
+
+.main-list-item {
+  padding: 5px 0;
+}
+
+.task-description {
+  margin: 0;
+  font-style: italic;
+}
+
+/* footer styles */
+.footer {
+  background-color: #e0a80d;
+  align-self: flex-end;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.footer-container > * {
+  padding: 0 5px;
+}
+
+.footer .footer-container p {
+  font-size: 28px;
+}
+
+.footer-icon {
+  height: 50px;
+}

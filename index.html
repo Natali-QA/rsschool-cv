@@ -6,8 +6,156 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Natalia Gorb CV</h1>
-  </main>
+<main id="main">
+  <header class="header content-row">
+    <div class="left-block">
+      <div class="profile-photo">
+        <img src="images/profile_photo.jpg" alt="PROFILE PHOTO">
+      </div>
+    </div>
+    <div class="right-block colored-block">
+      <nav class="header-menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a href="#contacts" class="header-menu-link">Contacts</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#experience" class="header-menu-link">Experience</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#code" class="header-menu-link">Code Example</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#skills" class="header-menu-link">Skills</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-info">
+        <h1>Natalia Gorb</h1>
+        <p>Future Front-End Developer</p>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="main-content">
+    <div class="content-row">
+      <div class="left-block colored-block">
+        <h2 class="row-title">About me:</h2>
+      </div>
+      <div class="right-block">
+        <p>I have been working as QA Engineer more than 8 years. I'm responsible for automation process for mobile apps
+          for the last 4 years. My next aim is to develop my skills for Web automation using Cypress and even try myself
+          in Web development.</p>
+      </div>
+    </div>
+
+    <div id="skills" class="content-row">
+      <div class="left-block">
+        <h2 class="row-title">Skills:</h2>
+      </div>
+      <div class="right-block colored-block">
+        <ul class="main-list">
+          <li class="main-list-item">8+ years’ experience in web and mobile apps testing;</li>
+          <li class="main-list-item">knowledge and understanding of software testing process, SDLC;</li>
+          <li class="main-list-item">experience with Agile processes;</li>
+          <li class="main-list-item">requirements analysis;</li>
+          <li class="main-list-item">bug tracking systems: Jira, Pivotal, Redmine, Trello;</li>
+          <li class="main-list-item">test documentation: test plans, checklists, test cases, bug reports;</li>
+          <li class="main-list-item">basic knowledge and usage of Jmeter, Charles;</li>
+          <li class="main-list-item">API testing (using Postman);</li>
+          <li class="main-list-item">MySQL: writing SQL queries;</li>
+          <li class="main-list-item">skills to read regular expressions;</li>
+          <li class="main-list-item">automation frameworks: Appium, Cypress, Protractor;</li>
+          <li class="main-list-item">experience with Python and TypeScript.</li>
+        </ul>
+      </div>
+    </div>
+    <div id="code" class="content-row">
+      <div class="left-block colored-block">
+        <h2 class="row-title">Code Example:</h2>
+      </div>
+      <div class="right-block">
+        <p class="task-description">Return the number (count) of vowels in the given string. We will consider "a", "e",
+          "i", "o", "u" as vowels for this Kata (but not "y"). The input string will only consist of lower case letters
+          and/or spaces.</p>
+        <pre>
+              <code>
+function getCount(str) {
+  let vowelsCount = 0;
+  const vowels = ["a", "e", "i", "o", "u"]
+  for (let i=0; i &lt; str.length; i++){
+     if(vowels.indexOf(str[i]) !== -1){
+      vowelsCount++;
+    }
+  }
+  return vowelsCount;
+}
+              </code>
+            </pre>
+      </div>
+    </div>
+    <div id="experience" class="content-row">
+      <div class="left-block ">
+        <h2 class="row-title">Experience:</h2>
+      </div>
+      <div class="right-block colored-block">
+        <ul class="main-list">
+          <li class="main-list-item">March 2014 – present - AQA engineer at Waverley Software;</li>
+          <li class="main-list-item">October 2012 – February 2014 - QA engineer at Opinion Corp;</li>
+          <li class="main-list-item">April 2012 – September 2012 - QA engineer at Winforse Ukraine.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="left-block colored-block">
+        <h2 class="row-title">Education:</h2>
+      </div>
+      <div class="right-block">
+        <ul class="main-list">
+          <li class="main-list-item">09.2007 – 06.2012 - National Aerospace University ‘KhAI’ ( Ukraine)
+            <br> Software Engineering
+            <br> Degree: Specialist
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-row">
+      <div class="left-block ">
+        <h2 class="row-title">Languages:</h2>
+      </div>
+      <div class="right-block colored-block">
+        <ul class="main-list">
+          <li class="main-list-item">English (written/verbal) – Upper-Intermediate;</li>
+          <li class="main-list-item">Russian – Native.</li>
+        </ul>
+      </div>
+    </div>
+    <div id="contacts" class="content-row">
+      <div class="left-block colored-block">
+        <h2 class="row-title">Contact Information:</h2>
+      </div>
+      <div class="right-block">
+        <ul class="main-list">
+          <li class="main-list-item">Email: natagorb343@gmail.com</li>
+          <li class="main-list-item">Skype: natali_gorb</li>
+          <li class="main-list-item">Location: Kharkiv, Ukraine</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <a href="https://rs.school/js" target="_blank">
+        <img src="images/rsschool_logo.svg" alt="RSSCHOOL LOGO" class="footer-icon">
+      </a>
+      <p>2022</p>
+      <a href="https://github.com/Natali-QA" target="_blank">
+        <img src="images/github.svg" alt="GIT LOGO" class="footer-icon">
+      </a>
+    </div>
+  </footer>
+</main>
 </body>
 </html>
